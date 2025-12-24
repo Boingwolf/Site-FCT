@@ -43,6 +43,7 @@ main{
     gap: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    columns: 2;
 }
 
 
