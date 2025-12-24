@@ -14,3 +14,27 @@ header {
     text-align: center;
     color: whitesmoke;
 }
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 5px;
+    background-color: #282828;
+    padding: 8px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+main{
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #0e0e0e;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
