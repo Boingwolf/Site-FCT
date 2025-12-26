@@ -1,0 +1,9 @@
+# Python Backend
+backend/venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.db
+.env
+__pycache__/
+*.log
