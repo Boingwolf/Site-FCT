@@ -35,7 +35,7 @@ if not exist "backend\venv\" (
 
 echo [1/2] Iniciando Backend API...
 echo       Porta: 5000
-start "Backend API" cmd /k "cd backend && venv\Scripts\activate && python app.py"
+start "Backend API" cmd /k "cd backend && venv\Scripts\activate && python api.py"
 
 echo.
 timeout /t 2 /nobreak >nul
