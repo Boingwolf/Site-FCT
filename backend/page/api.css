@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+/* Fonte */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Corpo */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e4e6;
+  color: #141414;
+}
+
+/* Header */
+header {
+  background-color: #f8f1af;
+  border-bottom: 2px solid #141414;
+  text-align: center;
+}
+
+header h1 {
+  padding: 1.5rem;
+  font-size: 3rem;
+}
+
+/* Layout principal */
+main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  flex: 1;
+}
+
+/* Área do formulário */
+.forms {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.5s ease;
+}
+
+.forms:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
+}
+
+.form-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-contacto label {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Inputs e textarea */
+.form-contacto input,
+.form-contacto textarea {
+  margin-top: 0.3rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+/* Textarea */
+.form-contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Focus */
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  outline: none;
+  border-color: #141414;
+  background-color: #fdfdfd;
+}
+
+/* Botão */
+.form-contacto button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #141414;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-contacto button:hover {
+  background-color: #333;
+}
+
+/* Área GETs */
+.api-gets {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de contactos */
+.contacto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Scrollbar personalizada */
+.contacto-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contacto-list::-webkit-scrollbar-track {
+  background: #e0e4e6;
+  border-radius: 10px;
+}
+
+.contacto-list::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 10px;
+}
+
+.contacto-list::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Cartões de contacto */
+.cartao-contacto {
+  background-color: #f8f1af;
+  border: 2px solid #141414;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-contacto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header do cartão */
+.cartao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #141414;
+}
+
+.cartao-header h3 {
+  color: #141414;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cartao-data {
+  color: #141414;
+  font-size: 0.85rem;
+  background: #ffffff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #141414;
+  font-weight: 500;
+}
+
+/* Body do cartão */
+.cartao-body {
+  margin-bottom: 1rem;
+}
+
+.cartao-body p {
+  margin-bottom: 0.75rem;
+  color: #141414;
+  line-height: 1.5;
+}
+
+.cartao-body strong {
+  font-weight: 700;
+}
+
+.cartao-email {
+  word-break: break-all;
+}
+
+/* Mensagem destacada */
+.cartao-mensagem {
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 4px solid #141414;
+  margin-top: 0.5rem;
+}
+
+/* Footer do cartão */
+.cartao-footer {
+  display: flex;
+  justify-content: flex-end;
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Estados de carregamento */
+.loading,
+.sem-dados,
+.erro {
+  text-align: center;
+  padding: 2rem;
+  color: #141414;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.erro {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.contacto-list {
+  max-height: 400px;
+}
+
+.cartao-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f1af;
+  border-top: 2px solid #141414;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
