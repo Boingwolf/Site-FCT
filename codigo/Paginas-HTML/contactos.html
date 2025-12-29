@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contatos.css">
     <script src="../script.js"></script>
     <title>Contactos</title>
 </head>
@@ -17,12 +18,18 @@
         <div id="contactos">
             <div id="contat">
                 <h2>Contactos</h2>
-                <p>Telefone: +351 912 345 678</p>
-                <p>Email: contato@aromawake.com</p>
+                <p>Telefone: +351 929 415 665</p>
+                <p>Email: contacto@aromawake.com</p>
             </div>
             <div id="form">
                 <h2>Formulário de Contacto</h2>
-                
+                <form action="#">
+                    <p>Nome: <input type="text" name="nome" id="nome"></p>
+                    <p>Email: <input type="email" name="email" id="email"></p>
+                    <p>Assunto: <input type="text" name="assunto" id="assunto"></p>
+                    <p>Mensagem: <br><textarea name="mensagem" id="mensagem" cols="30" rows="7"></textarea></p>
+                    <p><input type="submit" value="Enviar" onclick="enviarFormulario()" id="btnEnviar"></p>
+                </form>
             </div>
         </div>
     </main>

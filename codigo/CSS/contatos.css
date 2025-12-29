@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#contactos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#contat, #form{
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    height: auto;
+    text-align: left;
+}
+
+#form input, #form textarea{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #282828;
+    color: whitesmoke;
+}
+
+#form input:focus, #form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px #7f7f7f;
+}
+
+#btnEnviar {
+    cursor: pointer;
+}
+
+#btnEnviar:hover {
+    background-color: #111111;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#btnEnviar:not(:hover) {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+#form input::placeholder, #form textarea::placeholder{
+    color: whitesmoke;
+}
