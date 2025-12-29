@@ -67,6 +67,20 @@ img{
     text-align: left;
 }
 
+#contactos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#contat, #form{
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    height: auto;
+    text-align: left;
+}
+
 footer {
     background-color: #0e0e0e;
     padding: 10px;
