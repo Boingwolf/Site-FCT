@@ -1,6 +1,6 @@
 # Site FCT - AromaWake 🌟
 
-> Website de produto ficticio
+> Website de e-commerce para o produto fictício "AromaWake"
 
 ## 🚀 Links do Projeto
 
@@ -11,7 +11,7 @@
 
 ## 📸 Sobre o Projeto
 
-Sistema full-stack desenvolvido para gerir formulários de interesse e mensagens de contacto do projeto AromaWake. A aplicação inclui uma API REST robusta hospedada no Render e interface frontend responsiva deployada no GitHub Pages.
+Projeto full-stack educacional desenvolvido no âmbito da FCT (Formação em Contexto de Trabalho). Simula um sistema de e-commerce para o produto fictício "AromaWake", incluindo gestão de mensagens de contacto.
 
 ## 🛠️ Tech Stack
 
