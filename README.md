@@ -29,23 +29,6 @@ Sistema full-stack desenvolvido para gerir formulários de interesse e mensagens
 
 **Base URL:** `https://site-fct.onrender.com`
 
-### Formulários de Interesse
-```http
-POST /api/formulario
-Content-Type: application/json
-
-{
-  "nome": "João Silva",
-  "email": "joao@example.com",
-  "mensagem": "Interesse no produto"
-}
-```
-
-```http
-GET /api/formularios
-```
-Retorna lista de todos os formulários submetidos.
-
 ### Contactos
 ```http
 POST /api/contacto
