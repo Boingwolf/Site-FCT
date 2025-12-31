@@ -1,6 +1,6 @@
 # Site FCT - AromaWake 🌟
 
-> Sistema de gestão de interesse e contactos para o projeto AromaWake
+> Website de produto ficticio
 
 ## 🚀 Links do Projeto
 
