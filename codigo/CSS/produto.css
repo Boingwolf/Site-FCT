@@ -28,7 +28,9 @@ img{
 }
 
 #desc{
+    width: 150%;
     text-align: left;
+    font-size: 24px;
 }
 
 footer {
