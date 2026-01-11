@@ -24,6 +24,6 @@ function enviarFormulario() {
         console.log("Deu erro!");
       }
     })
-    .then((json) => console.log(json))
-    .catch((erro) => console.log(erro));
+    .then((json) => console.log(json), alert("Contacto criado com sucesso!"))
+    .catch((erro) => console.log(erro), alert(`Deu erro - ${erro}`));
 }
