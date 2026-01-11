@@ -51,6 +51,7 @@ main {
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.5s ease;
+  height: 100%;
 }
 
 .forms:hover {
@@ -83,6 +84,7 @@ main {
 .form-contacto textarea {
   resize: vertical;
   min-height: 120px;
+  max-height: 210px;
 }
 
 /* Focus */
@@ -113,7 +115,7 @@ main {
 .api-gets {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -122,9 +124,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-height: 95%;
   overflow-y: auto;
   padding-right: 0.5rem;
+  max-height: 42rem;
 }
 
 /* Scrollbar personalizada */
@@ -252,10 +254,6 @@ main {
   50% {
     opacity: 0.5;
   }
-}
-
-.contacto-list {
-  max-height: 400px;
 }
 
 .cartao-header {
