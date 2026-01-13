@@ -33,6 +33,19 @@ img{
     font-size: 24px;
 }
 
+#caracteristicas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    columns: 2;
+}
+
+#Publicoalvo{
+    width: 100%;
+}
+
 footer {
     background-color: #0e0e0e;
     padding: 10px;
