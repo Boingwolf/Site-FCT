@@ -17,6 +17,7 @@ body{
     font-family: var(--fonte-padrao);
     background-color: var(--main-background-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 header {
