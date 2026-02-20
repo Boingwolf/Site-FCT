@@ -134,13 +134,6 @@ python server_frontend.py
 ```
 
 </details>
-
-## 📝 Notas
-
-- A API em produção usa SQLite para persistência de dados
-- Frontend integra com API através de chamadas AJAX
-- Sistema preparado para escalar com PostgreSQL se necessário
-
 ## 🔒 Segurança
 
 - Validação de inputs nos endpoints
