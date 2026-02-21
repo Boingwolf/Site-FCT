@@ -1,5 +1,8 @@
+# Not yet implemented
+
+"""
+from sqlalchemy.sql.elements import Null
 from utils import request,jsonify,Blueprint
-from database import get_db_connection
 
 bp = Blueprint('formulario', __name__)
 
@@ -14,21 +17,13 @@ def criar_formulario():
         return jsonify({"error":'Email inválido'}), 400
     if not dados.get('mensagem'):
         return jsonify({'error':'Mensagem obrigatória'}), 400
-    
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute('''
-        INSERT INTO formularios (nome,email,telefone, mensagem)
-                   VALUES (?,?,?,?)
-        ''',(dados.get('nome'),dados.get('email'),dados.get('telefone', ''),dados.get('mensagem')))
-    conn.commit()
-    conn.close()
+
+
     print('Dados recebidos:', dados)
     return jsonify({'mensagem': 'Formulário guardado com sucesso'}), 201
 
 @bp.route('/api/formularios', methods=['GET'])
 def listar_formularios():
-    conn = get_db_connection()
-    formularios = conn.execute('SELECT * FROM formularios ORDER BY data_criacao DESC').fetchall()
-    conn.close()
+    formulario=Null
     return jsonify([dict(f) for f in formularios])
+"""
