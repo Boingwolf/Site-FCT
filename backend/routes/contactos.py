@@ -29,4 +29,5 @@ def criar_contacto():
 @bp.route("/api/contactos", methods=["GET"])
 def listar_contactos():
     contactos: list = sessao.query(Contacto).all()
+    print("Contactos:", contactos)
     return jsonify([dict(c) for c in contactos])

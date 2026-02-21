@@ -1,2 +1,1 @@
-from flask import request, jsonify, Blueprint
-import sqlite3
+from flask import Blueprint, jsonify, request
