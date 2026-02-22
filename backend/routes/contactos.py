@@ -1,6 +1,5 @@
 from db.models import Contacto
 from db.session import session
-
 from utils import Blueprint, jsonify, request
 
 bp = Blueprint("contacto", __name__)
@@ -33,7 +32,7 @@ def listar_contactos():
     contactos: dict = {}
     print("Contactos:", contactosRaw)
     for contacto in contactosRaw:
-        print(contacto.nome, contacto.email, contacto.mensagem)
+        print(contacto.id, contacto.nome, contacto.email, contacto.mensagem)
         contactos[contacto.id] = {
             "nome": contacto.nome,
             "email": contacto.email,
