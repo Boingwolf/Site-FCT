@@ -29,13 +29,16 @@ def criar_contacto():
 @bp.route("/api/contactos", methods=["GET"])
 def listar_contactos():
     contactosRaw: list = sessao.query(Contacto).all()
-    contactos: dict = {}
+    contactos: list = []
     print("Contactos:", contactosRaw)
     for contacto in contactosRaw:
         print(contacto.id, contacto.nome, contacto.email, contacto.mensagem)
-        contactos[contacto.id] = {
-            "nome": contacto.nome,
-            "email": contacto.email,
-            "mensagem": contacto.mensagem,
-        }
+        contactos.append(
+            {
+                "id": contacto.id,
+                "nome": contacto.nome,
+                "email": contacto.email,
+                "mensagem": contacto.mensagem,
+            }
+        )
     return jsonify(contactos)
