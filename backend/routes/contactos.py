@@ -32,13 +32,20 @@ def listar_contactos():
     contactos: list = []
     print("Contactos:", contactosRaw)
     for contacto in contactosRaw:
-        print(contacto.id, contacto.nome, contacto.email, contacto.mensagem)
+        print(
+            contacto.id,
+            contacto.nome,
+            contacto.email,
+            contacto.mensagem,
+            contacto.criado_em,
+        )
         contactos.append(
             {
                 "id": contacto.id,
                 "nome": contacto.nome,
                 "email": contacto.email,
                 "mensagem": contacto.mensagem,
+                "criado_em": contacto.criado_em.isoformat(),
             }
         )
     return jsonify(contactos)

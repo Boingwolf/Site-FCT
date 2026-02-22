@@ -1,4 +1,6 @@
-from sqlalchemy import Column, Integer, String, Text
+from datetime import datetime
+
+from sqlalchemy import Column, DateTime, Integer, String, Text
 from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
@@ -10,3 +12,4 @@ class Contacto(Base):
     nome = Column(String)
     email = Column(String)
     mensagem = Column(Text)
+    criado_em = Column(DateTime, default=datetime.utcnow)
