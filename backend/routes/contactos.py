@@ -1,6 +1,7 @@
-from db.models import Contacto
-from db.session import session
-from utils import Blueprint, jsonify, request
+from backend.db.models import Contacto
+from backend.db.session import session
+
+from ..utils import Blueprint, jsonify, request
 
 bp = Blueprint("contacto", __name__)
 sessao = session
@@ -28,6 +29,14 @@ def criar_contacto():
 
 @bp.route("/api/contactos", methods=["GET"])
 def listar_contactos():
-    contactos: list = sessao.query(Contacto).all()
-    print("Contactos:", contactos)
-    return jsonify([dict(c) for c in contactos])
+    contactosRaw: list = sessao.query(Contacto).all()
+    contactos: dict = {}
+    print("Contactos:", contactosRaw)
+    for contacto in contactosRaw:
+        print(contacto.nome, contacto.email, contacto.mensagem)
+        contactos[contacto.id] = {
+            "nome": contacto.nome,
+            "email": contacto.email,
+            "mensagem": contacto.mensagem,
+        }
+    return jsonify(contactos)
