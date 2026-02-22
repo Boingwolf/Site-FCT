@@ -43,7 +43,7 @@ function criarCartaoContacto(contacto) {
   cartao.className = "cartao-contacto";
 
   // Formatar data
-  const data = new Date(contacto.data_criacao);
+  const data = new Date(contacto.criado_em);
   const dataFormatada = data.toLocaleDateString("pt-PT", {
     day: "2-digit",
     month: "2-digit",
