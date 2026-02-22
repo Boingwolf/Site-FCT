@@ -1,10 +1,9 @@
 import os
 
+from db.init_db import init_db
 from flask import Flask, send_from_directory
 from flask_cors import CORS
-
-from backend.db.init_db import init_db
-from backend.routes import contactos
+from routes import contactos
 
 app = Flask(__name__)
 CORS(app)

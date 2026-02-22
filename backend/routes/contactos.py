@@ -1,7 +1,7 @@
-from backend.db.models import Contacto
-from backend.db.session import session
+from db.models import Contacto
+from db.session import session
 
-from ..utils import Blueprint, jsonify, request
+from utils import Blueprint, jsonify, request
 
 bp = Blueprint("contacto", __name__)
 sessao = session
